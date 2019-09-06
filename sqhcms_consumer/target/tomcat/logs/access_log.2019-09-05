@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:20:48:41 +0800] "GET / HTTP/1.1" 404 951 http-bio-8080-exec-1 46
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:20:48:44 +0800] "GET /list HTTP/1.1" 200 3384 http-bio-8080-exec-2 415
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:20:48:44 +0800] "GET /resource/js/jquery-3.2.1.js HTTP/1.1" 304 - http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:20:48:44 +0800] "GET /resource/css/bootstrap.css HTTP/1.1" 304 - http-bio-8080-exec-3 54
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:20:49:00 +0800] "GET /toSaveUser HTTP/1.1" 200 2303 http-bio-8080-exec-6 24

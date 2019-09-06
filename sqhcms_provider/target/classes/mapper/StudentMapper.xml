@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shiqihang.mapper.StudentMapper">
+	<!-- <select id="list" resultType="Student">
+		select * from student
+	</select> -->
+	
+	<delete id="deleteUser">
+		delete from user where id in
+			<foreach collection="array" open="(" close=")" item="id" separator=",">
+				#{id}
+			</foreach>
+	</delete>
+	
+	<delete id="deleteControl">
+		delete from middle where uid=#{id}
+	</delete>
+	
+	<insert id="saveUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+		insert into user set name=#{name},created=#{created}
+	</insert>
+	
+	<insert id="saveMiddle">
+		insert into middle set uid=#{uid},cid=#{cid}
+	</insert>
+</mapper>
